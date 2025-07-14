@@ -3,163 +3,163 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- BANCO DE PREGUNTAS COMPLETO (100 PREGUNTAS) ---
     const allQuestions = [
       {
-        "Pregunta": "El número cero es considerado un número natural.",
+        "pregunta": "El número cero es considerado un número natural.",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Falso",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "Todo número entero es también un número racional.",
+        "pregunta": "Todo número entero es también un número racional.",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Verdadero",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "¿Cuál es el resultado de '5 elevado a la potencia de 3'?",
+        "pregunta": "¿Cuál es el resultado de '5 elevado a la potencia de 3'?",
         "Respuestas": ["15", "25", "125", "53"],
         "Res_Correcta": "125",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "La expresión 'la raíz cuadrada de 64' es igual a...",
+        "pregunta": "La expresión 'la raíz cuadrada de 64' es igual a...",
         "Respuestas": [],
         "Res_Correcta": "8",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "Al resolver la ecuación '2x más 5 es igual a 15', el valor de x es...",
+        "pregunta": "Al resolver la ecuación '2x más 5 es igual a 15', el valor de x es...",
         "Respuestas": ["10", "5", "7.5", "20"],
         "Res_Correcta": "5",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "La solución de la desigualdad '3x es mayor que 9' es...",
+        "pregunta": "La solución de la desigualdad '3x es mayor que 9' es...",
         "Respuestas": ["x es mayor que 3", "x es menor que 3", "x es igual a 3", "x es mayor que 27"],
         "Res_Correcta": "x es mayor que 3",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "El producto notable '(a más b) al cuadrado' es igual a 'a al cuadrado más 2ab más b al cuadrado'.",
+        "pregunta": "El producto notable '(a más b) al cuadrado' es igual a 'a al cuadrado más 2ab más b al cuadrado'.",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Verdadero",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "Al factorizar la expresión 'x al cuadrado menos 9', se obtiene (x-3) por (x+3).",
+        "pregunta": "Al factorizar la expresión 'x al cuadrado menos 9', se obtiene (x-3) por (x+3).",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Verdadero",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "Simplifica la expresión racional '(x al cuadrado menos 1) dividido por (x menos 1)'. El resultado es...",
+        "pregunta": "Simplifica la expresión racional '(x al cuadrado menos 1) dividido por (x menos 1)'. El resultado es...",
         "Respuestas": [],
         "Res_Correcta": "x más 1",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "El punto donde una gráfica cruza el eje Y se llama...",
+        "pregunta": "El punto donde una gráfica cruza el eje Y se llama...",
         "Respuestas": ["Origen", "Intercepto en X", "Intercepto en Y", "Vértice"],
         "Res_Correcta": "Intercepto en Y",
         "Tema": "Fundamentos de Álgebra"
       },
       {
-        "Pregunta": "Una función lineal siempre produce una gráfica que es una línea recta.",
+        "pregunta": "Una función lineal siempre produce una gráfica que es una línea recta.",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Verdadero",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "El rango de una función se refiere a todos los posibles valores de salida o 'y'.",
+        "pregunta": "El rango de una función se refiere a todos los posibles valores de salida o 'y'.",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Verdadero",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "Si f(x) es igual a 'x al cuadrado más 1', ¿cuál es el valor de f(4)?",
+        "pregunta": "Si f(x) es igual a 'x al cuadrado más 1', ¿cuál es el valor de f(4)?",
         "Respuestas": ["9", "16", "17", "8"],
         "Res_Correcta": "17",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "La gráfica de la función f(x) = 'x al cubo' es simétrica con respecto al origen.",
+        "pregunta": "La gráfica de la función f(x) = 'x al cubo' es simétrica con respecto al origen.",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Verdadero",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "El dominio de la función f(x) = 'la raíz cuadrada de x' son todos los números reales.",
+        "pregunta": "El dominio de la función f(x) = 'la raíz cuadrada de x' son todos los números reales.",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Falso",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "Una función exponencial de la forma f(x) = 'a elevado a la x', donde a es mayor que 1, es siempre...",
+        "pregunta": "Una función exponencial de la forma f(x) = 'a elevado a la x', donde a es mayor que 1, es siempre...",
         "Respuestas": ["Creciente", "Decreciente", "Constante", "Negativa"],
         "Res_Correcta": "Creciente",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "La función inversa de la función exponencial es la función...",
+        "pregunta": "La función inversa de la función exponencial es la función...",
         "Respuestas": [],
         "Res_Correcta": "logarítmica",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "Si f(x) = x y g(x) = x+2, la composición 'f de g de x' es igual a...",
+        "pregunta": "Si f(x) = x y g(x) = x+2, la composición 'f de g de x' es igual a...",
         "Respuestas": ["x", "x+2", "2x", "x al cuadrado más 2x"],
         "Res_Correcta": "x+2",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "Una función es par si f(-x) es igual a f(x).",
+        "pregunta": "Una función es par si f(-x) es igual a f(x).",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Verdadero",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "La gráfica de una función cuadrática es una...",
+        "pregunta": "La gráfica de una función cuadrática es una...",
         "Respuestas": [],
         "Res_Correcta": "parábola",
         "Tema": "Funciones y sus Propiedades"
       },
       {
-        "Pregunta": "La suma de los ángulos internos de cualquier triángulo es siempre 180 grados.",
+        "pregunta": "La suma de los ángulos internos de cualquier triángulo es siempre 180 grados.",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Verdadero",
         "Tema": "Trigonometría"
       },
       {
-        "Pregunta": "El teorema de Pitágoras se aplica a cualquier tipo de triángulo.",
+        "pregunta": "El teorema de Pitágoras se aplica a cualquier tipo de triángulo.",
         "Respuestas": ["Verdadero", "False"],
         "Res_Correcta": "Falso",
         "Tema": "Trigonometría"
       },
       {
-        "Pregunta": "¿A cuántos grados equivale un radián, aproximadamente?",
+        "pregunta": "¿A cuántos grados equivale un radián, aproximadamente?",
         "Respuestas": ["90 grados", "180 grados", "360 grados", "57.3 grados"],
         "Res_Correcta": "57.3 grados",
         "Tema": "Trigonometría"
       },
       {
-        "Pregunta": "La función 'tangente' de un ángulo se define como el seno dividido por el...",
+        "pregunta": "La función 'tangente' de un ángulo se define como el seno dividido por el...",
         "Respuestas": [],
         "Res_Correcta": "coseno",
         "Tema": "Trigonometría"
       },
       {
-        "Pregunta": "Si el seno de un ángulo es 0.5, ¿cuál es el valor del ángulo en grados?",
+        "pregunta": "Si el seno de un ángulo es 0.5, ¿cuál es el valor del ángulo en grados?",
         "Respuestas": ["45 grados", "60 grados", "30 grados", "90 grados"],
         "Res_Correcta": "30 grados",
         "Tema": "Trigonometría"
       },
       {
-        "Pregunta": "La identidad trigonométrica fundamental establece que 'seno al cuadrado de x más coseno al cuadrado de x' es igual a...",
+        "pregunta": "La identidad trigonométrica fundamental establece que 'seno al cuadrado de x más coseno al cuadrado de x' es igual a...",
         "Respuestas": [],
         "Res_Correcta": "1",
         "Tema": "Trigonometría"
       },
       {
-        "Pregunta": "El período de la función seno es '2 por pi'.",
+        "pregunta": "El período de la función seno es '2 por pi'.",
         "Respuestas": ["Verdadero", "Falso"],
         "Res_Correcta": "Verdadero",
         "Tema": "Trigonometría"
@@ -654,7 +654,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let question = currentQuestions[currentQuestionIndex];
         questionCounter.textContent = `Pregunta ${currentQuestionIndex + 1} de ${currentQuestions.length}`;
         questionTopic.textContent = `Tema: ${question.Tema}`;
-        questionText.textContent = question.Pregunta;
+        questionText.textContent = question.pregunta;
         answersContainer.innerHTML = '';
 
         question.Respuestas.forEach(answer => {
