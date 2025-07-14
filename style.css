@@ -1,0 +1,113 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    background-color: white;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* --- Lógica para mostrar/ocultar pantallas --- */
+.screen.hidden {
+    display: none;
+}
+
+/* --- Botones y Entradas --- */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* --- Pantalla del Examen --- */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#question-text {
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #ccc;
+    text-align: left;
+    margin-top: 0; /* Reset margin for answer buttons */
+}
+
+.answer-btn:hover {
+    border-color: #007bff;
+}
+
+.answer-btn.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* --- Pantalla de Resultados --- */
+#final-score {
+    font-size: 3em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+#topics-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#topics-list li {
+    background-color: #ffdddd;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px auto;
+    width: 80%;
+}

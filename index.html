@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Conocimientos en Precálculo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <div id="welcome-screen" class="screen">
+            <h1>Diagnóstico de Precálculo</h1>
+            <p>Bienvenido/a. Esta herramienta te ayudará a identificar tus fortalezas y áreas de mejora en precálculo.</p>
+            <div class="input-group">
+                <label for="student-name">Por favor, escribe tu nombre para comenzar:</label>
+                <input type="text" id="student-name" placeholder="Tu nombre aquí...">
+            </div>
+            <button id="start-btn">Iniciar Diagnóstico</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <span id="question-counter"></span>
+                <span id="question-topic"></span>
+            </div>
+            <div id="question-container">
+                <p id="question-text"></p>
+            </div>
+            <div id="answers-container">
+                </div>
+            <button id="next-btn">Siguiente</button>
+        </div>
+
+        <div id="results-screen" class="screen hidden">
+            <h2>Resultados del Diagnóstico</h2>
+            <h3 id="result-student-name"></h3>
+            <div class="score-container">
+                <p>Tu Puntaje Final:</p>
+                <p id="final-score" class="score"></p>
+            </div>
+            <div class="summary-container">
+                <p>Respuestas correctas: <span id="correct-answers"></span></p>
+            </div>
+            <div class="topics-to-improve-container">
+                <h4>Temas a Mejorar:</h4>
+                <ul id="topics-list"></ul>
+            </div>
+            <button id="restart-btn">Repetir Diagnóstico</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
